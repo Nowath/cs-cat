@@ -45,7 +45,7 @@ export function Joystick() {
     <div
       ref={base}
       aria-hidden
-      className="fixed bottom-[max(1.5rem,env(safe-area-inset-bottom))] left-1/2 hidden -translate-x-1/2 size-28 touch-none items-center justify-center rounded-full border border-(--hud-border) bg-(--hud-glass) backdrop-blur-md select-none pointer-coarse:flex"
+      className="fixed bottom-[calc(max(1.5rem,env(safe-area-inset-bottom))+2.5rem)] left-1/2 hidden -translate-x-1/2 size-28 touch-none items-center justify-center rounded-full border border-(--hud-border) bg-(--hud-glass) backdrop-blur-md select-none pointer-coarse:flex"
       onPointerDown={(e) => {
         active.current = e.pointerId;
         e.currentTarget.setPointerCapture(e.pointerId);

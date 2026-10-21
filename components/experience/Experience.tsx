@@ -63,11 +63,21 @@ export default function Experience({ content, lang }: { content: Content; lang: 
     const { reachLoad, setSkipIntro } = useGame.getState();
     reachLoad(0.55);
     if (applyResume()) setSkipIntro(true);
-    // ออกจากหน้า (เช่นไปหน้า Menu) ปิดเสียงบรรยากาศด้วย
-    return () => {
-      ambience.disable();
-      useGame.getState().setSoundOn(false);
+    // ออกจากหน้า (เช่นไปหน้า Menu) หยุดเสียงบรรยากาศ แต่จำค่าเปิด/ปิดของผู้ใช้ไว้
+    return () => ambience.disable();
+  }, []);
+
+  // เสียงเปิดเป็นค่าเริ่มต้น แต่เบราว์เซอร์ยอมให้เริ่มเล่นในจังหวะที่ผู้ใช้กด/แตะ/กดคีย์เท่านั้น
+  // (เลื่อน wheel ไม่นับ) จึงรอการโต้ตอบครั้งแรกแล้วค่อยเปิด · capture ให้ทำงานก่อนปุ่มเสียงใน HUD
+  // ถ้าครั้งแรกคือกดปุ่มปิดเสียง ปุ่มจะปิดต่อทันทีตามที่ผู้ใช้ตั้งใจ
+  useEffect(() => {
+    const events = ["pointerdown", "keydown", "touchend"] as const;
+    const start = () => {
+      if (useGame.getState().soundOn) ambience.enable();
+      events.forEach((e) => window.removeEventListener(e, start, true));
     };
+    events.forEach((e) => window.addEventListener(e, start, true));
+    return () => events.forEach((e) => window.removeEventListener(e, start, true));
   }, []);
 
   return (

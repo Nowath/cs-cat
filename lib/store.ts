@@ -24,7 +24,7 @@ interface GameState {
   // แมวเดินตามทางเองทีละสถานี
   autoWalk: boolean;
   mapOpen: boolean;
-  // เสียงบรรยากาศ ปิดเป็นค่าเริ่มต้น (เบราว์เซอร์ยอมให้เล่นเสียงหลังผู้ใช้กดเองเท่านั้น)
+  // เสียงบรรยากาศ เปิดเป็นค่าเริ่มต้น — แต่จะดังจริงหลังผู้ใช้กด/แตะครั้งแรก (ดู Experience.tsx)
   soundOn: boolean;
   // กลับมาจากการสลับภาษา: เปิดม่านแล้วเข้าโหมดสำรวจเลย ไม่ผ่าน intro
   skipIntro: boolean;
@@ -55,7 +55,7 @@ export const useGame = create<GameState>()((set, get) => ({
   lastVisited: -1,
   autoWalk: false,
   mapOpen: false,
-  soundOn: false,
+  soundOn: true,
   skipIntro: false,
   setPhase: (phase) => set({ phase }),
   // ขั้นการโหลดเสร็จไม่เรียงลำดับได้ ใช้ค่ามากสุดเสมอ แถบจะไม่ถอยหลัง
