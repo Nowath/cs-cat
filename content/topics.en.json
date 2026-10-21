@@ -1,0 +1,461 @@
+{
+  "site": {
+    "name": "Computer Science, Department of Mathematics and Computer Science, Faculty of Science, Chulalongkorn University",
+    "shortName": "Computer Science · Chula",
+    "description": "Explore Computer Science at the Faculty of Science, Chulalongkorn University, guided by a black cat."
+  },
+  "ui": {
+    "controlsDesktop": "Use WASD or arrow keys to walk · click the ground to send the cat there",
+    "controlsTouch": "Drag the joystick or tap the ground to walk",
+    "viewDetails": "View details",
+    "pressToOpen": "or press E",
+    "close": "Close",
+    "source": "View original page",
+    "station": "Stop",
+    "scanToOpen": "Scan to open this page on your phone",
+    "loading": "Preparing the meadow",
+    "introEyebrow": "Faculty of Science, Chulalongkorn University",
+    "introTitle": "Computer Science",
+    "introSubtitle": "Explore our programs, research, and student life with this black cat.",
+    "scrollHint": "Scroll to start exploring",
+    "swipeHint": "Swipe up to start exploring",
+    "startExploring": "Start exploring",
+    "hudMap": "Map",
+    "hudAutoWalk": "Auto walk",
+    "hudAutoWalkStop": "Stop auto walk",
+    "hudSkip": "Next stop",
+    "hudMenu": "Read as a page",
+    "hudLanguage": "ไทย",
+    "hudLanguageLabel": "Switch to Thai",
+    "hudSoundOn": "Turn on ambient sound",
+    "hudSoundOff": "Mute",
+    "mapTitle": "Meadow map",
+    "mapHint": "Pick a stop to send the cat there",
+    "mapYouAreHere": "The cat is here",
+    "menuTitle": "Computer Science · Chula",
+    "menuIntro": "All the content on one page, for reading without exploring.",
+    "menuContents": "Contents",
+    "menuBackToExplore": "Back to exploring with the cat",
+    "creditCatModel": "Cat model",
+    "creditBy": "by",
+    "perfHint": "The 3D scene may run slowly on this device.",
+    "perfHintAction": "Read as a page instead",
+    "perfHintDismiss": "Dismiss",
+    "hudMenuToggle": "Menu"
+  },
+  "topics": [
+    {
+      "id": "about",
+      "title": "About the Program",
+      "teaser": "Computer Science at Chula's Faculty of Science, offered since 2535 BE (1992)",
+      "body": [
+        {
+          "type": "p",
+          "text": "The Bachelor of Science program in Computer Science has been offered since 2535 BE (1992) by the Department of Mathematics and Computer Science, Faculty of Science, Chulalongkorn University. The current curriculum is the 2023 (2566 BE) revision."
+        },
+        {
+          "type": "p",
+          "text": "The program focuses on both theoretical knowledge and real-world applications, with theory and hands-on work starting in the first year, alongside critical thinking, problem-solving, and communication."
+        },
+        {
+          "type": "heading",
+          "text": "Highlights"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Learn from professors and researchers with real-world experience",
+            "Join research projects from your first year to your final year",
+            "Collaborate with alumni and experts inside and outside the university",
+            "International projects and study exchanges with partner institutions abroad"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Our Department"
+        },
+        {
+          "type": "p",
+          "text": "The department was founded on 29 January 1933 (2476 BE), starting as the Mathematics Section of the Faculty of Arts and Science, and was the first in Thailand to offer bachelor's, master's, and doctoral degrees."
+        }
+      ],
+      "sourceUrl": "https://www.math.sc.chula.ac.th/program/undergraduate/computer-science/"
+    },
+    {
+      "id": "undergraduate",
+      "title": "Undergraduate Program",
+      "teaser": "B.Sc. in Computer Science with three study programs to choose from",
+      "body": [
+        {
+          "type": "p",
+          "text": "The program prepares graduates to apply computer science and digital technology to create innovations or integrate with other disciplines, ready for emerging technologies and advanced study."
+        },
+        {
+          "type": "heading",
+          "text": "Curriculum structure (2023 revision)"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Program",
+            "Total credits",
+            "What differs"
+          ],
+          "rows": [
+            [
+              "Single major",
+              "136",
+              "24 elective credits"
+            ],
+            [
+              "Major–minor",
+              "136",
+              "9 elective + 15 minor credits"
+            ],
+            [
+              "Honors",
+              "137",
+              "13 required-elective + 15 elective credits"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Every program includes 30 credits of general education, 12 credits of science foundations, 14 core credits, 39 specialized credits, and 6 free-elective credits (minimum totals shown)."
+        },
+        {
+          "type": "heading",
+          "text": "Field experience, 8 credits"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Option 1: Internship",
+            "Option 2: Cooperative education (not available in the Honors program)"
+          ]
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Information for current students",
+              "href": "https://www.math.sc.chula.ac.th/th/program/undergraduate/computer-science/current-students/"
+            }
+          ]
+        }
+      ],
+      "sourceUrl": "https://www.math.sc.chula.ac.th/program/undergraduate/computer-science/"
+    },
+    {
+      "id": "careers",
+      "title": "Career Paths",
+      "teaser": "Our graduates are sought after by leading tech companies and startups",
+      "body": [
+        {
+          "type": "p",
+          "text": "Graduates have found positions at well-known technology companies and startups. Example careers include:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Software, web, and mobile app developer",
+            "Data scientist or analyst",
+            "Artificial intelligence or machine learning engineer",
+            "Cloud solutions architect",
+            "Network engineer",
+            "Database administrator",
+            "Systems analyst",
+            "Quality assurance engineer",
+            "IT consultant",
+            "Researcher or scientist"
+          ]
+        }
+      ],
+      "sourceUrl": "https://www.math.sc.chula.ac.th/program/undergraduate/computer-science/"
+    },
+    {
+      "id": "graduate",
+      "title": "Master's & Ph.D.",
+      "teaser": "M.Sc. and Ph.D. in Computer Science and Information Technology",
+      "body": [
+        {
+          "type": "p",
+          "text": "The department offers the M.Sc. and Ph.D. in Computer Science and Information Technology. The Ph.D. program has run research activities since 1999, and both programs carry out research through the Advanced Virtual and Intelligent Computing (AVIC) Research Center."
+        },
+        {
+          "type": "heading",
+          "text": "Master's degree, 36 credits"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Plan",
+            "Coursework",
+            "Thesis / independent study"
+          ],
+          "rows": [
+            [
+              "Plan A, type A1",
+              "–",
+              "Thesis 36"
+            ],
+            [
+              "Plan A, type A2",
+              "24",
+              "Thesis 12"
+            ],
+            [
+              "Plan B",
+              "30",
+              "Independent study 6"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The thesis option suits students seeking in-depth study who plan to continue to a doctorate. The master project option suits students who want broad knowledge for a career in the computer industry."
+        },
+        {
+          "type": "heading",
+          "text": "Doctoral degree"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Type 1.1, for master's graduates: 48 thesis credits",
+            "Type 2.2, for bachelor's graduates: 24 coursework + 48 thesis credits, 72 in total"
+          ]
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Course descriptions (2023 curriculum)",
+              "href": "https://drive.google.com/file/d/1PjkHlQ65YhZMEmwvtjabW0FOhaiflbUI/view?usp=sharing"
+            },
+            {
+              "label": "Information for current students",
+              "href": "https://www.math.sc.chula.ac.th/th/program/graduate/computer-science-information-technology/current-students/"
+            }
+          ]
+        }
+      ],
+      "sourceUrl": "https://www.math.sc.chula.ac.th/program/graduate/computer-science-information-technology/"
+    },
+    {
+      "id": "research",
+      "title": "Research",
+      "teaser": "Eight computing research areas, from AI to quantum computing",
+      "body": [
+        {
+          "type": "p",
+          "text": "Students at every level can join research projects with faculty. The department's computer science research areas are:"
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Artificial Intelligence and Data Science",
+              "href": "https://www.math.sc.chula.ac.th/research-areas/artificial-intelligence-and-data-science/"
+            },
+            {
+              "label": "Algorithms, Optimization, Parallel Computing and Theoretical Computer Science",
+              "href": "https://www.math.sc.chula.ac.th/research-areas/algorithms-optimization-parallel-computing-and-theoretical-computer-science/"
+            },
+            {
+              "label": "Image Processing and Computer Vision",
+              "href": "https://www.math.sc.chula.ac.th/research-areas/image-processing-and-computer-vision/"
+            },
+            {
+              "label": "Software Engineering and Database Systems",
+              "href": "https://www.math.sc.chula.ac.th/research-areas/software-engineering-and-database-systems/"
+            },
+            {
+              "label": "Computer Network, Network Security and Cryptography",
+              "href": "https://www.math.sc.chula.ac.th/research-areas/computer-network-network-security-and-cryptography/"
+            },
+            {
+              "label": "Bioinformatics and Computational Biology",
+              "href": "https://www.math.sc.chula.ac.th/research-areas/bioinformatics/"
+            },
+            {
+              "label": "Graph and Network Analysis",
+              "href": "https://www.math.sc.chula.ac.th/research-areas/graph-network/"
+            },
+            {
+              "label": "Quantum Computing and Artificial Intelligence",
+              "href": "https://www.math.sc.chula.ac.th/research-areas/quantum-computing-and-artificial-intelligence/"
+            }
+          ]
+        }
+      ],
+      "sourceUrl": "https://www.math.sc.chula.ac.th/research-areas/"
+    },
+    {
+      "id": "people",
+      "title": "Faculty & Staff",
+      "teaser": "The department's faculty, researchers, and staff",
+      "body": [
+        {
+          "type": "p",
+          "text": "The department is home to faculty, researchers, graduate students, and staff. See each person's position and expertise in the department directory."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "People directory",
+              "href": "https://www.math.sc.chula.ac.th/people/"
+            }
+          ]
+        }
+      ],
+      "sourceUrl": "https://www.math.sc.chula.ac.th/people/"
+    },
+    {
+      "id": "news",
+      "title": "News & Events",
+      "teaser": "The department's latest stories, awards, and events",
+      "body": [
+        {
+          "type": "p",
+          "text": "News and events are updated often. Follow the latest on the department website and social media."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Stories & News",
+              "href": "https://www.math.sc.chula.ac.th/th/category/story-news/"
+            },
+            {
+              "label": "Awards",
+              "href": "https://www.math.sc.chula.ac.th/th/category/award/"
+            },
+            {
+              "label": "Events",
+              "href": "https://www.math.sc.chula.ac.th/event/"
+            },
+            {
+              "label": "Facebook",
+              "href": "https://www.facebook.com/MathComSciCU"
+            },
+            {
+              "label": "YouTube",
+              "href": "https://www.youtube.com/@MathCompSciChula"
+            },
+            {
+              "label": "Instagram",
+              "href": "https://www.instagram.com/mathcomscicu"
+            }
+          ]
+        }
+      ],
+      "sourceUrl": "https://www.math.sc.chula.ac.th/news-events/"
+    },
+    {
+      "id": "admission",
+      "title": "Admissions",
+      "teaser": "Undergraduates apply through TCAS; graduate admission opens twice a year",
+      "body": [
+        {
+          "type": "heading",
+          "text": "Undergraduate"
+        },
+        {
+          "type": "p",
+          "text": "Admission is through Chulalongkorn University's TCAS system. Applicants must have completed upper secondary school (Grade 12) or equivalent and meet the requirements announced by the university and the Council of University Presidents of Thailand."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Round 1: Portfolio",
+            "Round 2: Quota",
+            "Round 3: Admission"
+          ]
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Chulalongkorn University TCAS",
+              "href": "https://tcas.atc.chula.ac.th/"
+            },
+            {
+              "label": "Undergraduate program page",
+              "href": "https://www.math.sc.chula.ac.th/program/undergraduate/computer-science/"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Master's & Ph.D."
+        },
+        {
+          "type": "list",
+          "items": [
+            "First semester (Aug–Dec): applications open from February",
+            "Second semester (Jan–May): applications open from June",
+            "Master's: a bachelor's degree (or final semester in progress) with a GPA of at least 2.50, or at least one year of work experience",
+            "Ph.D.: a B.Sc. or B.Eng. with second-class honors, or a master's degree, with a GPA of at least 3.25 or a thesis graded good"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "English score requirements, required documents, and tuition may change. Please check the prospective students page for the latest details."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Graduate prospective students",
+              "href": "https://www.math.sc.chula.ac.th/program/graduate/computer-science-information-technology/prospective-students/"
+            }
+          ]
+        }
+      ],
+      "sourceUrl": "https://www.math.sc.chula.ac.th/program/graduate/computer-science-information-technology/prospective-students/"
+    },
+    {
+      "id": "contact",
+      "title": "Contact Us",
+      "teaser": "Department of Mathematics and Computer Science, Faculty of Science, Chula",
+      "body": [
+        {
+          "type": "p",
+          "text": "Department of Mathematics and Computer Science, Faculty of Science, Chulalongkorn University, Phayathai Road, Pathum Wan, Bangkok 10330, Thailand"
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Tel. +66 (0)2-218-5141-2",
+              "href": "tel:+6622185141"
+            },
+            {
+              "label": "Tel. +66 (0)2-255-2287",
+              "href": "tel:+6622552287"
+            },
+            {
+              "label": "Map (Google Maps)",
+              "href": "https://maps.app.goo.gl/Un4zZWC7xeFMYPQz7"
+            },
+            {
+              "label": "Administration contacts",
+              "href": "https://www.math.sc.chula.ac.th/administration/"
+            },
+            {
+              "label": "Facebook",
+              "href": "https://www.facebook.com/MathComSciCU"
+            },
+            {
+              "label": "Instagram",
+              "href": "https://www.instagram.com/mathcomscicu"
+            }
+          ]
+        }
+      ],
+      "sourceUrl": "https://www.math.sc.chula.ac.th/administration/"
+    }
+  ]
+}

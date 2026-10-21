@@ -1,26 +1,245 @@
+/* macrostructure: ฉาก 3D เต็มจอ + HUD ลอยบนสุด (ปุ่มมุมขวาบน, จอยสติ๊กซ้ายล่าง)
+ * theme: cozy game / Ghibli เช้าโปร่ง — อ้างอิงเนื้อหาจาก https://www.math.sc.chula.ac.th/th/ (ไม่ลอกหน้าตา)
+ * accent: ชมพูจุฬา #DE5C8E (= --primary) ใช้เฉพาะปุ่ม action, ป้ายหัวข้อ, ลิงก์ใน dialog
+ * style: มน (radius ใหญ่), HUD เป็นกระจกขาวบางบนฉาก — มีภาพ 3D อยู่ข้างหลังเสมอจึงเบลอแล้วเห็นผล
+ *   dialog/sheet เป็นพื้นทึบสีกระดาษอุ่น อ่านยาวสบายตา, เงาชั้นเดียวนุ่ม ๆ, ไม่มี gradient บน UI
+ * dark mode: ไม่ทำ — ฉากเป็นเช้าตายตัว HUD ต้องอ่านบนพื้นสว่างเท่านั้น
+ * ฟอนต์: Anuphan ตัวเดียวครอบไทย+ละติน (400/500/600)
+ */
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* ชั้นที่ 1 — พาเลตต์ */
+  --brand-chula: oklch(0.66 0.16 357);
+  --brand-chula-deep: oklch(0.55 0.16 357);
+  --brand-chula-mist: oklch(0.95 0.03 357);
+  --brand-ink: oklch(0.27 0.03 160);
+  --brand-ink-soft: oklch(0.45 0.03 160);
+  --brand-haze: oklch(0.94 0.02 155);
+  --brand-paper: oklch(0.99 0.006 95);
+  --brand-line: oklch(0.9 0.015 150);
+
+  /* ชั้นที่ 2 — token ของ shadcn ผูกกลับเข้าพาเลตต์ */
+  --background: var(--brand-paper);
+  --foreground: var(--brand-ink);
+  --card: var(--brand-paper);
+  --card-foreground: var(--brand-ink);
+  --popover: var(--brand-paper);
+  --popover-foreground: var(--brand-ink);
+  --primary: var(--brand-chula);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: var(--brand-haze);
+  --secondary-foreground: var(--brand-ink);
+  --muted: var(--brand-haze);
+  --muted-foreground: var(--brand-ink-soft);
+  --accent: var(--brand-chula-mist);
+  --accent-foreground: var(--brand-chula-deep);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: var(--brand-line);
+  --input: var(--brand-line);
+  --ring: var(--brand-chula);
+
+  /* token เฉพาะงานนี้ */
+  --sky-haze: var(--brand-haze);
+  --hud-glass: oklch(1 0 0 / 0.55);
+  --hud-solid: oklch(1 0 0 / 0.92);
+  --hud-border: oklch(1 0 0 / 0.7);
+  --hud-ink: var(--brand-ink);
+  --hud-shadow: 0 6px 20px -8px oklch(0.3 0.05 160 / 0.35);
+
+  /* พื้นหลังหน้า loading: เหลืองอ่อนอุ่น แมวดำตัดชัด */
+  --loading-bg: oklch(0.93 0.1 95);
+  /* ฉากคั่นตอน transition: เข้มเกือบดำแบบม่านปิดฉากการ์ตูน วงคลื่นที่หด/ขยายจึงเห็นชัด */
+  --iris-curtain: oklch(0.2 0.015 160);
+
+  --radius: 1rem;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --dur-fast: 0.18s;
+  --dur-med: 0.32s;
+  --dur-slow: 0.48s;
 }
 
 @theme inline {
-  --color-background: var(--background);
+  --font-sans: var(--font-anuphan), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-sans);
+  --color-ink: var(--brand-ink);
+  --color-ink-soft: var(--brand-ink-soft);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+  }
+  body {
+    background: var(--sky-haze);
+    color: var(--foreground);
+    /* กัน pull-to-refresh / เด้งหน้าบนมือถือระหว่างลากจอยสติ๊ก */
+    overscroll-behavior: none;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* แมววิ่งในหน้า loading: sprite 12 ท่า (public/loading/cat-run.webp) เล่นทีละเฟรมด้วย steps()
+ * พื้นเป็นเส้นประวิ่งถอยหลัง ให้ดูเหมือนแมววิ่งไปข้างหน้าทั้งที่อยู่กลางจอ */
+.loading-cat-run {
+  aspect-ratio: 320 / 153;
+  background: url("/loading/cat-run.webp") 0 0 / 1200% 100% no-repeat;
+  animation: cat-run 0.84s steps(12, jump-none) infinite;
+}
+.loading-ground {
+  background: repeating-linear-gradient(90deg, var(--border) 0 18px, transparent 18px 44px);
+  animation: ground-run 0.42s linear infinite;
+}
+@keyframes cat-run {
+  from { background-position: 0% 0; }
+  to { background-position: 100% 0; }
+}
+@keyframes ground-run {
+  from { background-position: 0 0; }
+  to { background-position: -44px 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  /* หยุดที่ท่าห่อตัวกลางรอบวิ่ง ซึ่งอ่านออกว่าเป็นแมวกำลังวิ่งแม้ภาพนิ่ง */
+  .loading-cat-run {
+    animation: none;
+    background-position: calc(100% * 6 / 11) 0;
+  }
+  .loading-ground {
+    animation: none;
+  }
+}
+
+/* ปุ่มกระดาษเก่าสไตล์ pixel art (อ้างอิงชุดปุ่มเกม: พื้นพีช ขอบน้ำตาลเข้ม แถบอิฐด้านล่าง จุดลายที่มุม)
+ * อยู่นอก @layer ตั้งใจ: ชนะ hover/bg ของ variant ghost ใน Button โดยไม่ต้องไล่ override ทีละ class */
+:root {
+  --paper: oklch(0.86 0.085 66);
+  --paper-hover: oklch(0.89 0.08 70);
+  --paper-pressed: oklch(0.8 0.1 55);
+  --paper-edge: oklch(0.62 0.12 35);
+  --paper-ink: oklch(0.28 0.035 30);
+  --paper-dot: oklch(0.7 0.1 45);
+  --paper-panel: oklch(0.95 0.035 78);
+}
+.btn-paper {
+  /* จุดประดับมุมละจุด (radial-gradient 4 ชั้น) วางบนพื้นพีช */
+  background:
+    radial-gradient(circle, var(--paper-dot) 0 1.2px, transparent 1.6px) top 4px left 5px / 4px 4px no-repeat,
+    radial-gradient(circle, var(--paper-dot) 0 1.2px, transparent 1.6px) top 4px right 5px / 4px 4px no-repeat,
+    radial-gradient(circle, var(--paper-dot) 0 1.2px, transparent 1.6px) bottom 8px left 5px / 4px 4px no-repeat,
+    radial-gradient(circle, var(--paper-dot) 0 1.2px, transparent 1.6px) bottom 8px right 5px / 4px 4px no-repeat,
+    var(--paper);
+  border: 2px solid var(--paper-ink);
+  border-radius: 5px;
+  color: var(--paper-ink);
+  /* แถบอิฐด้านล่างให้ปุ่มดูนูน + เงาแข็งแบบ pixel ใต้ปุ่ม */
+  box-shadow:
+    inset 0 -4px 0 var(--paper-edge),
+    0 2px 0 oklch(0.2 0.03 30 / 0.35);
+  transition:
+    transform var(--dur-fast) var(--ease-out),
+    background-color var(--dur-fast) var(--ease-out);
+}
+.btn-paper:hover {
+  background-color: var(--paper-hover);
+}
+.btn-paper:active {
+  transform: translateY(2px);
+  box-shadow:
+    inset 0 -2px 0 var(--paper-edge),
+    0 0 0 oklch(0.2 0.03 30 / 0.35);
+}
+/* ปุ่มสถานะที่เปิดอยู่ (เดินเอง, เสียง): กดจมลง แถบอิฐย้ายไปขอบบน */
+.btn-paper[aria-pressed="true"] {
+  background-color: var(--paper-pressed);
+  transform: translateY(2px);
+  box-shadow: inset 0 3px 0 var(--paper-edge);
+}
+.btn-paper:focus-visible {
+  outline: 3px solid var(--ring);
+  outline-offset: 2px;
+}
+
+/* โทนกระดาษเก่า: ตั้ง token ของ shadcn ใหม่ในขอบเขตนี้ ของข้างใน (ข้อความรอง เส้นคั่น ตาราง hover)
+ * จึงเปลี่ยนโทนตามเองทั้งหมด — ใช้ทั้งแผ่น dialog และหน้า /menu ทั้งหน้า */
+.paper-theme,
+.panel-paper {
+  --foreground: var(--paper-ink);
+  --card-foreground: var(--paper-ink);
+  --popover-foreground: var(--paper-ink);
+  --muted-foreground: oklch(0.42 0.05 40);
+  --muted: oklch(0.9 0.055 70);
+  --border: oklch(0.78 0.07 55);
+  --accent: oklch(0.9 0.06 65);
+  --accent-foreground: oklch(0.45 0.12 30);
+  --ring: var(--paper-edge);
+  color: var(--paper-ink);
+}
+/* พื้นหน้า /menu: กระดาษอ่อนกว่าแผ่นการ์ดหนึ่งขั้น การ์ดจึงลอยเด่นจากพื้น */
+.paper-theme {
+  --background: oklch(0.975 0.02 85);
+  background-color: var(--background);
+}
+
+/* แผ่นกระดาษเก่าสำหรับ dialog/sheet/การ์ด — ภาษาเดียวกับ .btn-paper แต่พื้นอ่อนกว่าหนึ่งขั้น อ่านข้อความยาวไม่ล้าตา */
+.panel-paper {
+  background:
+    radial-gradient(circle, var(--paper-dot) 0 1.6px, transparent 2px) top 9px left 10px / 6px 6px no-repeat,
+    radial-gradient(circle, var(--paper-dot) 0 1.6px, transparent 2px) top 9px right 10px / 6px 6px no-repeat,
+    radial-gradient(circle, var(--paper-dot) 0 1.6px, transparent 2px) bottom 14px left 10px / 6px 6px no-repeat,
+    radial-gradient(circle, var(--paper-dot) 0 1.6px, transparent 2px) bottom 14px right 10px / 6px 6px no-repeat,
+    var(--paper-panel);
+  color: var(--paper-ink);
+  border: 3px solid var(--paper-ink);
+  border-radius: 10px;
+  box-shadow:
+    inset 0 -6px 0 var(--paper-edge),
+    0 6px 0 oklch(0.2 0.03 30 / 0.35);
+}
+/* ป้ายชื่อสถานีที่ลอยเหนือฉาก: แผ่นกระดาษเล็ก ไม่มีจุดมุม (เล็กเกินจนดูรก) */
+.tag-paper {
+  background: var(--paper-panel);
+  color: var(--paper-ink);
+  border: 2px solid var(--paper-ink);
+  border-radius: 5px;
+  box-shadow:
+    inset 0 -3px 0 var(--paper-edge),
+    0 2px 0 oklch(0.2 0.03 30 / 0.35);
+}
+
+/* bottom sheet บนมือถือ: ติดขอบล่างจอ จึงมีกรอบแค่ด้านบน ไม่มีแถบอิฐล่าง */
+.panel-paper.panel-sheet {
+  border-bottom: 0;
+  border-radius: 14px 14px 0 0;
+  box-shadow: 0 -4px 0 oklch(0.2 0.03 30 / 0.2);
 }

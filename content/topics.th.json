@@ -1,0 +1,461 @@
+{
+  "site": {
+    "name": "สาขาวิชาวิทยาการคอมพิวเตอร์ ภาควิชาคณิตศาสตร์และวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย",
+    "shortName": "วิทยาการคอมพิวเตอร์ จุฬาฯ",
+    "description": "เดินสำรวจสาขาวิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย ไปกับแมวดำ"
+  },
+  "ui": {
+    "controlsDesktop": "กด WASD หรือปุ่มลูกศรเพื่อเดิน · คลิกพื้นให้แมวเดินไปเอง",
+    "controlsTouch": "ลากจอยสติ๊กหรือแตะพื้นเพื่อพาแมวเดิน",
+    "viewDetails": "ดูรายละเอียด",
+    "pressToOpen": "หรือกด E",
+    "close": "ปิด",
+    "source": "ดูหน้าต้นฉบับ",
+    "station": "สถานีที่",
+    "scanToOpen": "สแกนเพื่อเปิดหน้านี้บนมือถือ",
+    "loading": "กำลังเตรียมทุ่งหญ้า",
+    "introEyebrow": "คณะวิทยาศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย",
+    "introTitle": "วิทยาการคอมพิวเตอร์",
+    "introSubtitle": "เดินสำรวจหลักสูตร งานวิจัย และชีวิตนิสิต ไปกับแมวดำตัวนี้",
+    "scrollHint": "เลื่อนเพื่อเริ่มสำรวจ",
+    "swipeHint": "ปัดขึ้นเพื่อเริ่มสำรวจ",
+    "startExploring": "เริ่มสำรวจ",
+    "hudMap": "แผนที่",
+    "hudAutoWalk": "ให้แมวเดินเอง",
+    "hudAutoWalkStop": "หยุดเดินเอง",
+    "hudSkip": "ไปสถานีถัดไป",
+    "hudMenu": "อ่านแบบหน้าเว็บ",
+    "hudLanguage": "English",
+    "hudLanguageLabel": "เปลี่ยนเป็นภาษาอังกฤษ",
+    "hudSoundOn": "เปิดเสียงบรรยากาศ",
+    "hudSoundOff": "ปิดเสียง",
+    "mapTitle": "แผนที่ทุ่ง",
+    "mapHint": "กดสถานีเพื่อพาแมวไปที่นั่น",
+    "mapYouAreHere": "แมวอยู่ตรงนี้",
+    "menuTitle": "วิทยาการคอมพิวเตอร์ จุฬาฯ",
+    "menuIntro": "เนื้อหาทั้งหมดในหน้าเดียว สำหรับอ่านแบบไม่ต้องเดินสำรวจ",
+    "menuContents": "สารบัญ",
+    "menuBackToExplore": "กลับไปเดินสำรวจกับแมว",
+    "creditCatModel": "โมเดลแมว",
+    "creditBy": "โดย",
+    "perfHint": "เครื่องนี้อาจแสดงฉาก 3D ได้ไม่ลื่น",
+    "perfHintAction": "อ่านแบบหน้าเว็บแทน",
+    "perfHintDismiss": "ซ่อนคำแนะนำ",
+    "hudMenuToggle": "เมนู"
+  },
+  "topics": [
+    {
+      "id": "about",
+      "title": "เกี่ยวกับสาขา",
+      "teaser": "วิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ จุฬาฯ เปิดสอนมาตั้งแต่ พ.ศ. 2535",
+      "body": [
+        {
+          "type": "p",
+          "text": "หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์ เปิดสอนตั้งแต่ พ.ศ. 2535 ภายใต้ภาควิชาคณิตศาสตร์และวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย ปัจจุบันใช้หลักสูตรปรับปรุง พ.ศ. 2566"
+        },
+        {
+          "type": "p",
+          "text": "หลักสูตรเน้นทั้งความรู้เชิงทฤษฎีและการนำไปใช้จริง นิสิตได้ลงมือปฏิบัติตั้งแต่ปีแรก ควบคู่กับการฝึกคิดเชิงวิพากษ์ แก้ปัญหา และสื่อสาร"
+        },
+        {
+          "type": "heading",
+          "text": "จุดเด่น"
+        },
+        {
+          "type": "list",
+          "items": [
+            "เรียนกับอาจารย์และนักวิจัยที่มีประสบการณ์จริง",
+            "เข้าร่วมโครงการวิจัยได้ตั้งแต่ปีแรกจนถึงปีสุดท้าย",
+            "ทำงานร่วมกับศิษย์เก่าและผู้เชี่ยวชาญทั้งในและนอกมหาวิทยาลัย",
+            "มีโครงการนานาชาติและการแลกเปลี่ยนกับสถาบันพันธมิตรในต่างประเทศ"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "ภาควิชาของเรา"
+        },
+        {
+          "type": "p",
+          "text": "ภาควิชาก่อตั้งเมื่อวันที่ 29 มกราคม พ.ศ. 2476 โดยเริ่มจากแผนกคณิตศาสตร์ในคณะอักษรศาสตร์และวิทยาศาสตร์ และเป็นแห่งแรกของประเทศไทยที่เปิดสอนครบทั้งระดับปริญญาตรี โท และเอก"
+        }
+      ],
+      "sourceUrl": "https://www.math.sc.chula.ac.th/th/program/undergraduate/computer-science/"
+    },
+    {
+      "id": "undergraduate",
+      "title": "หลักสูตรปริญญาตรี",
+      "teaser": "วิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์ เลือกได้ 3 โปรแกรม",
+      "body": [
+        {
+          "type": "p",
+          "text": "หลักสูตรมุ่งผลิตบัณฑิตที่นำความรู้ด้านวิทยาการคอมพิวเตอร์และเทคโนโลยีดิจิทัลไปสร้างนวัตกรรมหรือบูรณาการกับศาสตร์อื่น พร้อมรับเทคโนโลยีใหม่และศึกษาต่อในระดับสูงได้"
+        },
+        {
+          "type": "heading",
+          "text": "โครงสร้างหลักสูตร (หลักสูตรปรับปรุง พ.ศ. 2566)"
+        },
+        {
+          "type": "table",
+          "head": [
+            "โปรแกรม",
+            "หน่วยกิตรวม",
+            "ส่วนที่ต่างกัน"
+          ],
+          "rows": [
+            [
+              "เอกเดี่ยว",
+              "136",
+              "วิชาเลือก 24 หน่วยกิต"
+            ],
+            [
+              "เอก-โท",
+              "136",
+              "วิชาเลือก 9 + วิชาโท 15 หน่วยกิต"
+            ],
+            [
+              "เกียรตินิยม",
+              "137",
+              "วิชาบังคับเลือก 13 + วิชาเลือก 15 หน่วยกิต"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "ทุกโปรแกรมมีหมวดศึกษาทั่วไป 30 หน่วยกิต วิชาพื้นฐานวิทยาศาสตร์ 12 วิชาแกน 14 วิชาเฉพาะด้าน 39 และเลือกเสรี 6 หน่วยกิต (หน่วยกิตรวมไม่น้อยกว่าที่ระบุ)"
+        },
+        {
+          "type": "heading",
+          "text": "ประสบการณ์ภาคสนาม 8 หน่วยกิต"
+        },
+        {
+          "type": "list",
+          "items": [
+            "แบบที่ 1 ฝึกงาน",
+            "แบบที่ 2 สหกิจศึกษา (ไม่เปิดในโปรแกรมเกียรตินิยม)"
+          ]
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "ข้อมูลสำหรับนิสิตในหลักสูตร",
+              "href": "https://www.math.sc.chula.ac.th/th/program/undergraduate/computer-science/current-students/"
+            }
+          ]
+        }
+      ],
+      "sourceUrl": "https://www.math.sc.chula.ac.th/th/program/undergraduate/computer-science/"
+    },
+    {
+      "id": "careers",
+      "title": "เส้นทางอาชีพ",
+      "teaser": "บัณฑิตเป็นที่ต้องการของบริษัทเทคโนโลยีและสตาร์ทอัพชั้นนำ",
+      "body": [
+        {
+          "type": "p",
+          "text": "บัณฑิตของสาขาได้ทำงานในบริษัทเทคโนโลยีและสตาร์ทอัพที่มีชื่อเสียง ตัวอย่างสายงาน ได้แก่"
+        },
+        {
+          "type": "list",
+          "items": [
+            "นักพัฒนาซอฟต์แวร์ เว็บ และแอปพลิเคชันมือถือ",
+            "นักวิทยาศาสตร์ข้อมูล / นักวิเคราะห์ข้อมูล",
+            "วิศวกรปัญญาประดิษฐ์ / การเรียนรู้ของเครื่อง",
+            "สถาปนิกโซลูชันบนคลาวด์",
+            "วิศวกรเครือข่าย",
+            "ผู้ดูแลฐานข้อมูล",
+            "นักวิเคราะห์ระบบ",
+            "วิศวกรประกันคุณภาพซอฟต์แวร์",
+            "ที่ปรึกษาด้านไอที",
+            "นักวิจัย / นักวิทยาศาสตร์"
+          ]
+        }
+      ],
+      "sourceUrl": "https://www.math.sc.chula.ac.th/th/program/undergraduate/computer-science/"
+    },
+    {
+      "id": "graduate",
+      "title": "ปริญญาโทและเอก",
+      "teaser": "วิทยาการคอมพิวเตอร์และเทคโนโลยีสารสนเทศ ทั้งมหาบัณฑิตและดุษฎีบัณฑิต",
+      "body": [
+        {
+          "type": "p",
+          "text": "ภาควิชาเปิดสอนหลักสูตรปริญญาโทและปริญญาเอก สาขาวิชาวิทยาการคอมพิวเตอร์และเทคโนโลยีสารสนเทศ ปริญญาเอกเปิดสอนตั้งแต่ พ.ศ. 2542 งานวิจัยส่วนหนึ่งดำเนินการภายใต้ศูนย์วิจัย AVIC (Advanced Virtual and Intelligent Computing)"
+        },
+        {
+          "type": "heading",
+          "text": "ปริญญาโท 36 หน่วยกิต"
+        },
+        {
+          "type": "table",
+          "head": [
+            "แผน",
+            "รายวิชา",
+            "วิทยานิพนธ์ / ค้นคว้าอิสระ"
+          ],
+          "rows": [
+            [
+              "แผน ก แบบ ก 1",
+              "–",
+              "วิทยานิพนธ์ 36"
+            ],
+            [
+              "แผน ก แบบ ก 2",
+              "24",
+              "วิทยานิพนธ์ 12"
+            ],
+            [
+              "แผน ข",
+              "30",
+              "ค้นคว้าอิสระ 6"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "แผนวิทยานิพนธ์เหมาะกับผู้ที่ต้องการศึกษาเชิงลึกและต่อปริญญาเอก ส่วนแผนโครงงานเหมาะกับผู้ที่ต้องการความรู้รอบด้านเพื่อทำงานในอุตสาหกรรมคอมพิวเตอร์"
+        },
+        {
+          "type": "heading",
+          "text": "ปริญญาเอก"
+        },
+        {
+          "type": "list",
+          "items": [
+            "แบบ 1.1 สำหรับผู้จบปริญญาโท: วิทยานิพนธ์ 48 หน่วยกิต",
+            "แบบ 2.2 สำหรับผู้จบปริญญาตรี: รายวิชา 24 + วิทยานิพนธ์ 48 รวม 72 หน่วยกิต"
+          ]
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "เนื้อหารายวิชา (หลักสูตร พ.ศ. 2566)",
+              "href": "https://drive.google.com/file/d/1PjkHlQ65YhZMEmwvtjabW0FOhaiflbUI/view?usp=sharing"
+            },
+            {
+              "label": "ข้อมูลสำหรับนิสิตในหลักสูตร",
+              "href": "https://www.math.sc.chula.ac.th/th/program/graduate/computer-science-information-technology/current-students/"
+            }
+          ]
+        }
+      ],
+      "sourceUrl": "https://www.math.sc.chula.ac.th/th/program/graduate/computer-science-information-technology/"
+    },
+    {
+      "id": "research",
+      "title": "งานวิจัย",
+      "teaser": "8 สาขาวิจัยด้านคอมพิวเตอร์ ตั้งแต่ AI จนถึงควอนตัมคอมพิวติ้ง",
+      "body": [
+        {
+          "type": "p",
+          "text": "นิสิตทุกระดับมีโอกาสร่วมโครงการวิจัยกับอาจารย์ สาขาวิจัยด้านวิทยาการคอมพิวเตอร์ของภาควิชา ได้แก่"
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "ปัญญาประดิษฐ์และวิทยาศาสตร์ข้อมูล",
+              "href": "https://www.math.sc.chula.ac.th/research-areas/artificial-intelligence-and-data-science/"
+            },
+            {
+              "label": "อัลกอริทึม การหาค่าเหมาะที่สุด การคำนวณแบบขนาน และวิทยาการคอมพิวเตอร์เชิงทฤษฎี",
+              "href": "https://www.math.sc.chula.ac.th/research-areas/algorithms-optimization-parallel-computing-and-theoretical-computer-science/"
+            },
+            {
+              "label": "การประมวลผลภาพและคอมพิวเตอร์วิทัศน์",
+              "href": "https://www.math.sc.chula.ac.th/research-areas/image-processing-and-computer-vision/"
+            },
+            {
+              "label": "วิศวกรรมซอฟต์แวร์และระบบฐานข้อมูล",
+              "href": "https://www.math.sc.chula.ac.th/research-areas/software-engineering-and-database-systems/"
+            },
+            {
+              "label": "เครือข่ายคอมพิวเตอร์ ความปลอดภัยเครือข่าย และวิทยาการเข้ารหัสลับ",
+              "href": "https://www.math.sc.chula.ac.th/research-areas/computer-network-network-security-and-cryptography/"
+            },
+            {
+              "label": "ชีวสารสนเทศและชีววิทยาเชิงคำนวณ",
+              "href": "https://www.math.sc.chula.ac.th/research-areas/bioinformatics/"
+            },
+            {
+              "label": "การวิเคราะห์กราฟและเครือข่าย",
+              "href": "https://www.math.sc.chula.ac.th/research-areas/graph-network/"
+            },
+            {
+              "label": "ควอนตัมคอมพิวติ้งและปัญญาประดิษฐ์",
+              "href": "https://www.math.sc.chula.ac.th/research-areas/quantum-computing-and-artificial-intelligence/"
+            }
+          ]
+        }
+      ],
+      "sourceUrl": "https://www.math.sc.chula.ac.th/th/research-areas/"
+    },
+    {
+      "id": "people",
+      "title": "อาจารย์และบุคลากร",
+      "teaser": "อาจารย์ นักวิจัย และเจ้าหน้าที่ของภาควิชา",
+      "body": [
+        {
+          "type": "p",
+          "text": "ภาควิชามีทั้งอาจารย์ นักวิจัย นิสิตบัณฑิตศึกษา และเจ้าหน้าที่ ดูรายชื่อ ตำแหน่ง และความเชี่ยวชาญของแต่ละท่านได้ที่ทำเนียบบุคลากรของภาควิชา"
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "ทำเนียบบุคลากร",
+              "href": "https://www.math.sc.chula.ac.th/th/people/"
+            }
+          ]
+        }
+      ],
+      "sourceUrl": "https://www.math.sc.chula.ac.th/th/people/"
+    },
+    {
+      "id": "news",
+      "title": "ข่าวและกิจกรรม",
+      "teaser": "เรื่องราว รางวัล และกิจกรรมล่าสุดของภาควิชา",
+      "body": [
+        {
+          "type": "p",
+          "text": "ข่าวสารและกิจกรรมอัปเดตอยู่เสมอ ติดตามล่าสุดได้ที่เว็บไซต์และโซเชียลมีเดียของภาควิชา"
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "เรื่องราวและข่าวสาร",
+              "href": "https://www.math.sc.chula.ac.th/th/category/story-news/"
+            },
+            {
+              "label": "รางวัล",
+              "href": "https://www.math.sc.chula.ac.th/th/category/award/"
+            },
+            {
+              "label": "กิจกรรม",
+              "href": "https://www.math.sc.chula.ac.th/th/event/"
+            },
+            {
+              "label": "Facebook",
+              "href": "https://www.facebook.com/MathComSciCU"
+            },
+            {
+              "label": "YouTube",
+              "href": "https://www.youtube.com/@MathCompSciChula"
+            },
+            {
+              "label": "Instagram",
+              "href": "https://www.instagram.com/mathcomscicu"
+            }
+          ]
+        }
+      ],
+      "sourceUrl": "https://www.math.sc.chula.ac.th/th/news-events-th/"
+    },
+    {
+      "id": "admission",
+      "title": "รับสมัคร",
+      "teaser": "ปริญญาตรีสมัครผ่าน TCAS ส่วนปริญญาโทและเอกเปิดรับปีละ 2 ภาค",
+      "body": [
+        {
+          "type": "heading",
+          "text": "ปริญญาตรี"
+        },
+        {
+          "type": "p",
+          "text": "รับผ่านระบบ TCAS ของจุฬาฯ ผู้สมัครต้องจบชั้นมัธยมศึกษาปีที่ 6 หรือเทียบเท่า และมีคุณสมบัติตามประกาศของมหาวิทยาลัยและที่ประชุมอธิการบดีแห่งประเทศไทย (ทปอ.)"
+        },
+        {
+          "type": "list",
+          "items": [
+            "รอบที่ 1 Portfolio",
+            "รอบที่ 2 Quota",
+            "รอบที่ 3 Admission"
+          ]
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "TCAS จุฬาลงกรณ์มหาวิทยาลัย",
+              "href": "https://tcas.atc.chula.ac.th/"
+            },
+            {
+              "label": "ข้อมูลผู้สนใจเข้าศึกษา ปริญญาตรี",
+              "href": "https://www.math.sc.chula.ac.th/th/program/undergraduate/computer-science/prospective-students/"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "ปริญญาโทและเอก"
+        },
+        {
+          "type": "list",
+          "items": [
+            "ภาคต้น (ส.ค.–ธ.ค.) เปิดรับสมัครตั้งแต่เดือนกุมภาพันธ์",
+            "ภาคปลาย (ม.ค.–พ.ค.) เปิดรับสมัครตั้งแต่เดือนมิถุนายน",
+            "ปริญญาโท: จบปริญญาตรี (หรือกำลังเรียนภาคสุดท้าย) แต้มเฉลี่ยสะสมไม่ต่ำกว่า 2.50 หรือมีประสบการณ์ทำงานอย่างน้อย 1 ปี",
+            "ปริญญาเอก: จบ วท.บ. หรือ วศ.บ. เกียรตินิยมอันดับสอง หรือจบปริญญาโท โดยมีแต้มเฉลี่ยไม่ต่ำกว่า 3.25 หรือวิทยานิพนธ์ระดับดี"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "เกณฑ์คะแนนภาษาอังกฤษ เอกสารที่ต้องใช้ และค่าเล่าเรียนอาจเปลี่ยนแปลง โปรดตรวจสอบข้อมูลล่าสุดที่หน้าผู้สนใจเข้าศึกษา"
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "ข้อมูลผู้สนใจเข้าศึกษา ปริญญาโทและเอก",
+              "href": "https://www.math.sc.chula.ac.th/th/program/graduate/computer-science-information-technology/prospective-students/"
+            }
+          ]
+        }
+      ],
+      "sourceUrl": "https://www.math.sc.chula.ac.th/th/program/graduate/computer-science-information-technology/prospective-students/"
+    },
+    {
+      "id": "contact",
+      "title": "ติดต่อเรา",
+      "teaser": "ภาควิชาคณิตศาสตร์และวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ จุฬาฯ",
+      "body": [
+        {
+          "type": "p",
+          "text": "ภาควิชาคณิตศาสตร์และวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย ถนนพญาไท เขตปทุมวัน กรุงเทพมหานคร 10330"
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "โทร 02-218-5141-2",
+              "href": "tel:+6622185141"
+            },
+            {
+              "label": "โทร 02-255-2287",
+              "href": "tel:+6622552287"
+            },
+            {
+              "label": "แผนที่ (Google Maps)",
+              "href": "https://maps.app.goo.gl/Un4zZWC7xeFMYPQz7"
+            },
+            {
+              "label": "ช่องทางติดต่อฝ่ายต่าง ๆ",
+              "href": "https://www.math.sc.chula.ac.th/administration/"
+            },
+            {
+              "label": "Facebook",
+              "href": "https://www.facebook.com/MathComSciCU"
+            },
+            {
+              "label": "Instagram",
+              "href": "https://www.instagram.com/mathcomscicu"
+            }
+          ]
+        }
+      ],
+      "sourceUrl": "https://www.math.sc.chula.ac.th/administration/"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+cat.glb
+  "Cat" by J-Toastie — https://poly.pizza/m/DJ9rpAhrh3
+  License: CC-BY 3.0 — https://creativecommons.org/licenses/by/3.0/
+  Changes: texture recolored to a black cat and downscaled; eyes and all animation added in code.

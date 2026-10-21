@@ -1,0 +1,6 @@
+cat-run.webp — แปลงจากแอนิเมชัน "Black cat running" โดย Xero Hub
+ต้นฉบับ: https://lottiefiles.com/free-animation/black-cat-running-nRUU9Tssvl
+ดัดแปลง: ดึงภาพท่าวิ่ง 12 ท่าออกจากไฟล์ .lottie จัดให้วิ่งอยู่กับที่ ย่อขนาด และรวมเป็น sprite sheet
+
+เผยแพร่ภายใต้ Lottie Simple License (ไฟล์ดัดแปลงใช้เงื่อนไขเดียวกับต้นฉบับ)
+https://lottiefiles.com/page/license
